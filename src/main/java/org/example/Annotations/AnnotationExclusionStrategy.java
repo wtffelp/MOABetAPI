@@ -10,7 +10,7 @@ public class AnnotationExclusionStrategy implements ExclusionStrategy {
     }
 
     @Override
-    public boolean shouldSkipClass(Class clazz) {
+    public boolean shouldSkipClass(Class<?> clazz) {
         return false;
     }
 }
