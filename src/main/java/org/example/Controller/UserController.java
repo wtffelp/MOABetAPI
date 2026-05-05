@@ -52,7 +52,7 @@ public class UserController {
             );
             ctx.status(200);
         });
-        app.delete("/usuario/{id}", ctx -> {
+        app.delete("/usuarios/{id}", ctx -> {
             int id = Integer.parseInt(ctx.pathParam("id"));
             userService.deletarUsuario(id);
             ctx.status(204);
